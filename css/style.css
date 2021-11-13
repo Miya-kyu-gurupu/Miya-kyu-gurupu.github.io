@@ -1,4 +1,16 @@
-@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'gosic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://anto565.github.io/font/YasashisaGothicBold-V2.woff) format('woff');
+}
+
+
+.gosic {
+    font-family: 'gosic';
+}@charset "UTF-8";
 
 /* 共通部分
 -------------------------------------*/
@@ -12,17 +24,6 @@ body {
     color: #432;
 }
 
-@font-face {
-    font-family: 'gosic';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://anto565.github.io/font/YasashisaGothicBold-V2.woff) format('woff');
-}
-
-
-.gosic {
-    font-family: 'gosic';
-}
 
 a {
     text-decoration: none;
