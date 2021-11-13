@@ -7,11 +7,18 @@ html {
     font-style: 100%;
 }
 
-body {
-    font-size: "Yu Gothic Medium", "游ゴジック　Medium", YuGothic, "游ゴジック体", "ヒラギノ角ゴPro w3", sans-serif;
+body { font-family: 'gosic';
     line-height: 1.7;
     color: #432;
 }
+
+@font-face {
+    font-family: 'gosic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https;//anto565.github.io/font/YasashisaGothicBold-V2.woff) format('woff');
+}
+
 
 a {
     text-decoration: none;
