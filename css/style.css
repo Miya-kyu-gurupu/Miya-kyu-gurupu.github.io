@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* 共通部分
+-------------------------------------*/
+
+html {
+    font-style: 100%;
+}
+
+body {
+    font-size: "Yu Gothic Medium", "游ゴジック　Medium", YuGothic, "游ゴジック体", "ヒラギノ角ゴPro w3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*header
+----------------------------------*/
+
+.logo {
+    width: 100px;
+    margin-top: 14px;
+}
+
+.maiu-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.maiu-nav {
+    margin-left: 36px;
+}
+
+.maiu-nav {
+    color: #432;
+}
+
+.maiu-nav a:hover {
+    color: #0bd;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/* HOME
+----------------------*/
+
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+
+/*ボタン装飾*/
+
+.button {
+    font-size: 1.375rem;
+    background: 5px;
+    color: #ff006f;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+
+.button:hover {
+    background: #0090aa;
+}
+
+
+/*ナビゲーションバー*/
+
+ul {
+    overflow: hidden;
+    list-style: none;
+    margin: 0 auto;
+    z-index: 20;
+}
+
+ul li {
+    display: inline-block;
+    padding: 26px 10px 20px 10px;
+}
+
+
+/*ナビゲーションバー 領域*/
+
+header {
+    z-index: 10;
+    height: 64px;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(167, 14, 14);
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hed-img {
+    height: 64px;
+}
+
+.hed-text {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
