@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'gosic';
     font-style: normal;
@@ -7,10 +5,10 @@
     src: url(https://anto565.github.io/font/YasashisaGothicBold-V2.woff) format('woff');
 }
 
-
 .gosic {
     font-family: 'gosic';
-}@charset "UTF-8";
+}
+
 
 /* 共通部分
 -------------------------------------*/
@@ -19,11 +17,10 @@ html {
     font-style: 100%;
 }
 
-body { 
+body {
     line-height: 1.7;
     color: #432;
 }
-
 
 a {
     text-decoration: none;
@@ -139,4 +136,22 @@ header {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+}
+
+
+/*----この先、ホーム画像に関連するcss作ります。修正が必要な時はよろしくお願いします。
+『追記　画像がずれてしまったので調整してほしいです。よろしくお願いします。これは確認したら消してください』*/
+
+.big-bg {
+    background-size: cover;
+    background-position: cover top;
+}
+
+#home {
+    background-image: url(../images/bg-masthead.jpg);
+    min-height: 100vh;
+}
+
+#home .page-title {
+    text-transform: none;
 }
