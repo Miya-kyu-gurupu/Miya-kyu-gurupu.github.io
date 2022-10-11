@@ -20,6 +20,8 @@ html {
 body {
     line-height: 1.7;
     color: #432;
+    background-image: url(‘../images/bg-masthead.jpg’);
+    
 }
 
 a {
@@ -121,7 +123,7 @@ header {
     height: 64px;
     position: fixed;
     top: 0px;
-    background-color: rgb(167, 14, 14);
+    background-color: #0243b4;
     width: 100%;
     z-index: 2;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
@@ -147,11 +149,29 @@ header {
     background-position: cover top;
 }
 
-#home {
-    background-image: url(../images/bg-masthead.jpg);
-    min-height: 100vh;
-}
-
 #home .page-title {
     text-transform: none;
+}
+
+
+/*---ここからNewsのcss--*/
+
+#news {
+    background-image: url(bg-masthead.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#news .page-title{
+    text-align: center;
+}
+
+/*---フッタ---*/
+footer{
+    background: #0bd;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 0.875rem;
 }
