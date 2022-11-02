@@ -167,7 +167,7 @@ header {
 
 /*---フッタ---*/
 footer{
-    background: #0bd;
+    background: #0243b4;
     text-align: center;
     padding: 26px 0;
 }
@@ -175,3 +175,30 @@ footer p{
     color: #fff;
     font-size: 0.875rem;
 }
+
+/*--記事---*/
+article{
+    width: 80%;
+}
+
+/*---サイドバー---*/
+aside {
+    width: 30%;
+}
+.news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* @font-face{
+    font-family: 'kakugosic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/font/Corporate-Logo-Medium-ver3.woff) format('woff');
+    }
+    .kakugosic{
+        font-family: 'kakugosic';
+    }
+    */
+    
