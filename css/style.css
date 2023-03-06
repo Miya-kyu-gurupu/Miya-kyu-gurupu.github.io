@@ -1,204 +1,122 @@
-@font-face {
-    font-family: 'gosic';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://anto565.github.io/font/YasashisaGothicBold-V2.woff) format('woff');
-}
-
-.gosic {
-    font-family: 'gosic';
-}
-
-
-/* 共通部分
--------------------------------------*/
-
-html {
-    font-style: 100%;
-}
-
-body {
-    line-height: 1.7;
-    color: #432;
-    background-image: url(‘../images/bg-masthead.jpg’);
-    
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-
-/*header
-----------------------------------*/
-
-.logo {
-    width: 100px;
-    margin-top: 14px;
-}
-
-.maiu-nav {
-    display: flex;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    margin-top: 34px;
-    list-style: none;
-}
-
-.maiu-nav {
-    margin-left: 36px;
-}
-
-.maiu-nav {
-    color: #432;
-}
-
-.maiu-nav a:hover {
-    color: #0bd;
-}
-
-.page-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.wrapper {
-    margin: 0 auto;
-    padding: 0 4%;
-}
-
-
-/* HOME
-----------------------*/
-
-.home-content {
-    text-align: center;
-    margin-top: 10%;
-}
-
-.home-content p {
-    font-size: 1.125rem;
-    margin: 10px 0 42px;
-}
-
-
-/*ボタン装飾*/
-
-.button {
-    font-size: 1.375rem;
-    background: 5px;
-    color: #ff006f;
-    border-radius: 5px;
-    padding: 18px 32px;
-}
-
-.button:hover {
-    background: #0090aa;
-}
-
-
-/*ナビゲーションバー*/
-
-ul {
-    overflow: hidden;
-    list-style: none;
-    margin: 0 auto;
-    z-index: 20;
-}
-
-ul li {
-    display: inline-block;
-    padding: 26px 10px 20px 10px;
-}
-
-
-/*ナビゲーションバー 領域*/
-
+/* ヘッダー */
 header {
-    z-index: 10;
-    height: 64px;
-    position: fixed;
-    top: 0px;
-    background-color: #0243b4;
-    width: 100%;
-    z-index: 2;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-.hed-img {
-    height: 64px;
-}
-
-.hed-text {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #333;
+  color: #fff;
 }
 
 
-/*----この先、ホーム画像に関連するcss作ります。修正が必要な時はよろしくお願いします。
-『追記　画像がずれてしまったので調整してほしいです。よろしくお願いします。これは確認したら消してください』*/
-
-.big-bg {
-    background-size: cover;
-    background-position: cover top;
+/* タイトル */
+.header-title {
+  order: 1;
 }
 
-#home .page-title {
-    text-transform: none;
+.header-title h1 {
+  margin: 0;
 }
 
-
-/*---ここからNewsのcss--*/
-
-#news {
-    background-image: url(bg-masthead.jpg);
-    height: 270px;
-    margin-bottom: 40px;
-}
-#news .page-title{
-    text-align: center;
+/* メニュー */
+.menu {
+  order: 2;
+  margin-left: 20px;
 }
 
-/*---フッタ---*/
-footer{
-    background: #0243b4;
-    text-align: center;
-    padding: 26px 0;
-}
-footer p{
-    color: #fff;
-    font-size: 0.875rem;
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/*--記事---*/
-article{
-    width: 80%;
+.menu li {
+  margin-left: 20px;
 }
 
-/*---サイドバー---*/
-aside {
-    width: 30%;
-}
-.news-contents{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.menu a {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* @font-face{
-    font-family: 'kakugosic';
-    font-style: normal;
-    font-weight: 400;
-    src: url(/font/Corporate-Logo-Medium-ver3.woff) format('woff');
-    }
-    .kakugosic{
-        font-family: 'kakugosic';
-    }
-    */
-    
+/* サイドバー開閉ボタン */
+.sidebar-toggle button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sidebar-toggle button span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* サイドバー */
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.sidebar.active {
+  left: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 透明度のある黒色 */
+}
+
+.caption-text {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.announcement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* 適宜変更してください */
+}
+
+.announcement h2 {
+  margin: 0;
+  padding: 10px;
+  border: 2px solid #333;
+}
+.underline {
+  border-bottom: 1px dashed black;
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-text {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.8em;
+}

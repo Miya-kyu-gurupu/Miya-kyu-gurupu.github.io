@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[公式]宮城急行グループ</title>
-    <meta name="description" content="宮城急行グループについてのサイトです。色々な情報を公開できる用にします">
-
-    <!--css-->
-
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MiyagiKyukou Group</title>
 </head>
-
-<body class="gosic">
-    <div id="home" class="big-bg">
-        <header class="page-header wrapper">
-
-            <a href="index.html"><img class="hed-img" src="images/mikyoutv.png"></a>
-            <h1>宮城急行公式web</h1>
-            <ul>
-                <center>
-                    <li><a style="color: black;" href="index.html">top</a></li>
-                    <li><a style="color: black;" href="mikyoutv.html">mikyoutv</a></li>
-                    <li><a style="color: black;" href="news.html">news</a></li>
-                    <li><a style="color: black;" href="tofu.html">とうふの部屋</a></li>
-                    <!-- <li><a href=".html"></a></li>          -->
-                    <!--今は使わない-->
-                    <!-- <li><a href=".html"></a></li>          -->
-                    <!--今は使わない-->
-                </center>
-            </ul>
-        </header>
-
-        <div class="home-content wrapper">
-            <h2 class="page-title">ようこそ宮城急行グループへ</h2>
-            <p>宮城急行グループの活動や公開予定の動画などを公開します。</p>
-            <a class="button" href="news.html">宮城急行グループの最新情報はこちら！</a>
-        </div>
-        <!-- /.home-content-->
+<body>
+  <header>
+    <div class="header-title">
+      <h1>MiyagiKyukou Group</h1>
     </div>
-    <!--/#home-->
+    <nav class="menu">
+      <ul>
+        <li><a style="color: aqua;" href="index.html">TOP</a></li>
+        <li><a href="tofu.html">とうふの部屋</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="#">メニュー4</a></li>
+        <li><a href="#">メニュー5</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-toggle">
+      <button id="sidebar-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <div class="sidebar">
+    <ul>
+      <li><a style="color: aliceblue;" href="index.html">TOP</a></li>
+      <li><a style="color: aliceblue;" href="tofu.html">とうふの部屋</a></li>
+      <li><a style="color: aliceblue;" href="News.html">News</a></li>
+    </ul>
+  </div>
+  <div class="slideshow">
+    <img src="images/スクリーンショット 2023-03-06 20.57.51.png" alt="Slide 1">
+  <!--  <img src="slide2.jpg" alt="Slide 2">
+    <img src="slide3.jpg" alt="Slide 3">-->
+    <div class="caption">
+      <div class="caption-text">ようこそ[MiyagiKyukouGroup]へ</div>
+    </div>
+  </div>
+  
+  <div class="announcement">
+    <h2>お知らせ</h2>
+  </div>
+  <div class="underline">
+    <li><a style="color: black; "  href="News.html">マイクラ刑務所脱獄計画始動</a></li>
+  </div>
+  <footer>
+    <div class="footer-text">
+      &copy; 2021~2023 MiyagiKyukouGroup
+    </div>
+  </footer>
+  
+      <script src="script.js"></script>
 </body>
-
 </html>

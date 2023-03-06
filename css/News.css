@@ -1,0 +1,84 @@
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+  }
+  
+  /* タイトル */
+  .header-title {
+    order: 1;
+  }
+  
+  .header-title h1 {
+    margin: 0;
+  }
+  .header-title h1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* メニュー */
+  .menu {
+    order: 2;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* サイドバー開閉ボタン */
+  .sidebar-toggle button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .sidebar-toggle button span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  /* サイドバー */
+  .sidebar {
+    position: fixed;
+    top: 80px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  
