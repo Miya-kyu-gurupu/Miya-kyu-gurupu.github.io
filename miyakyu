@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MiyagiKyukou Group</title>
+</head>
+<body>
+  <header>
+    <div class="header-title">
+      <h1>MiyagiKyukou Group</h1>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a style="color: aqua;" href="index.html">TOP</a></li>
+        <li><a href="tofu.html">とうふの部屋</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="#">メニュー4</a></li>
+        <li><a href="#">メニュー5</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-toggle">
+      <button id="sidebar-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <div class="sidebar">
+    <ul>
+      <li><a style="color: aliceblue;" href="index.html">TOP</a></li>
+      <li><a style="color: aliceblue;" href="tofu.html">とうふの部屋</a></li>
+      <li><a style="color: aliceblue;" href="News.html">News</a></li>
+    </ul>
+  </div>
+  <div class="slideshow">
+    <img src="images/スクリーンショット 2023-03-06 20.57.51.png" alt="Slide 1">
+  <!--  <img src="slide2.jpg" alt="Slide 2">
+    <img src="slide3.jpg" alt="Slide 3">-->
+    <div class="caption">
+      <div class="caption-text">ようこそ[MiyagiKyukouGroup]へ</div>
+    </div>
+  </div>
+  
+  <div class="announcement">
+    <h2>お知らせ</h2>
+  </div>
+  <div class="underline">
+    <li><a style="color: black; "  href="News.html">マイクラ刑務所脱獄計画始動</a></li>
+  </div>
+  <footer>
+    <div class="footer-text">
+      &copy; 2021~2023 MiyagiKyukouGroup
+    </div>
+  </footer>
+  
+      <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-title">
+      <h1>MiyagiKyukou Group</h1>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="tofu.html">とうふの部屋</a></li>
+        <li><a style="color: aqua;" href="News.html">News</a></li>
+        <li><a href="#">メニュー4</a></li>
+        <li><a href="#">メニュー5</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-toggle">
+      <button id="sidebar-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <div class="sidebar">
+    <ul>
+      <li><a style="color: aliceblue;" href="#">サイドバー1</a></li>
+      <li><a style="color: aliceblue;" href="#">サイドバー2</a></li>
+      <li><a style="color: aliceblue;" href="#">サイドバー3</a></li>
+    </ul>
+  </div>
+  
+      <script src="script.js"></script>
+</body>
+</html>
+const sidebar = document.querySelector('.sidebar');
+const toggleButton = document.querySelector('#sidebar-toggle-button');
+
+toggleButton.addEventListener('click', function() {
+  sidebar.classList.toggle('active');
+});
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>リダイレクト</title>
+    <script>
+        setTimeout("location.href='https://tofu-s-room.github.io/'", );
+    </script>
+</head>
+<body>
+    <h2>外部ページにアクセスします</h2>
+    <p>リダイレクト<a href="https://tofu-s-room.github.io/">ページが変わりません</a></p>
+</body>
+
+</html>
